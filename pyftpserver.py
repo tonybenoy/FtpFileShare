@@ -10,7 +10,7 @@ import random
 
 parser = argparse.ArgumentParser(description="An ftp based file sharing tool")
 parser.add_argument("-P", "--port", type=int, help="Specify Port")
-parser.add_argument("-a", "--anon", help="Allow Anonymous")
+parser.add_argument("-a", "--anon", help="Allow Anonymous" action="store_true")
 parser.add_argument("-u", "--username", help="Specify Username")
 parser.add_argument("-p", "--password", help="Specify Password")
 parser.add_argument("-r", "--read", help="Read files", action="store_true")
